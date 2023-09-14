@@ -4,19 +4,19 @@ import * as fs from "fs";
 
 // AWS 配置
 const s3Client = new S3Client({
-    region:'ap-northeast-1',
+    region:'xxx',
     credentials: {
-      accessKeyId:'AKIAYEDOE4WQWXN34OUS',
-      secretAccessKey: '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',
+      accessKeyId:'xxxS',
+      secretAccessKey: 'xxx',
     },
   });
 
 // S3 存储桶的名称和对象键（文件名）
-const bucketName = 'zhangtz-rdm-test';
-const objectKey = '[clean][p0-p0-]ubuntu-22.04-amd64.ova';
+const bucketName = 'xxx';
+const objectKey = xxx';
 
 // 本地 OVA 文件的路径
-const localFilePath = './[clean][p0-p0-]ubuntu-22.04-amd64.ova';
+const localFilePath = 'xx';
 
 const uploadLargeFile = async () => {
     const fileStream = fs.createReadStream(localFilePath);
